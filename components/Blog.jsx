@@ -45,7 +45,7 @@ const Blog = () => {
                     ))
                 ) : (
                     <div className="text-2xl text-slate-700 p-24">
-                        Cargando posts...
+                        Cargando posts..
                     </div>
                 )}
             </section>
