@@ -1,19 +1,16 @@
-const express = require("express");
-const nodemailer = require("nodemailer");
-const bodyParser = require("body-parser");
-const cors = require("cors");
+import { NextResponse } from "next/server";
+import nodemailer from "nodemailer";
 
-const app = express();
-const port = process.env.PORT || 3001;
-
-app.use(cors());
-app.use(bodyParser.json());
-
-app.post("/api/submitForm", async (req, res) => {
-    const data = req.body;
+export const POST = async (req) => {
+    const formData = await req.formData();
+    const jsonData = formData.get("data");
+    const data = JSON.parse(jsonData);
 
     if (!data || !data.name || !data.email || !data.message) {
-        return res.status(400).send({ message: "Bad request" });
+        return NextResponse.json({
+            success: false,
+            error: "Error missing data",
+        });
     }
 
     try {
@@ -53,13 +50,15 @@ app.post("/api/submitForm", async (req, res) => {
 
         await transporter.sendMail(mailOptions);
 
-        res.status(200).json({ success: "Correo enviado exitosamente" });
+        return NextResponse.json({
+            success: true,
+            error: "Mensaje enviado con éxito",
+        });
     } catch (error) {
         console.error("Error sending email:", error);
-        res.status(500).json({ error: "Internal Server Error" });
+        return NextResponse.json({
+            success: false,
+            error: "Error sending email",
+        });
     }
-});
-
-app.listen(port, () => {
-    console.log(`Server is running on port ${port}`);
-});
+};

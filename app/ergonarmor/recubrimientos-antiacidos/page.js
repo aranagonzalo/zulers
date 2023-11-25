@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { ChevronRight, ChevronDown } from "lucide-react";
-import db from "@/utils/db";
+import db from "@/lib/db";
 
 export const metadata = {
     title: "Recubrimientos Antiácidos",

@@ -1,11 +1,10 @@
-"use client"
-import { Toaster, toast } from 'sonner';
-import { useState } from "react"
-import axios from "axios"
-import { RotatingLines } from  'react-loader-spinner'
+"use client";
+import { Toaster, toast } from "sonner";
+import { useState } from "react";
+import axios from "axios";
+import { RotatingLines } from "react-loader-spinner";
 
 const Form = () => {
-
     const [formData, setFormData] = useState({
         name: "",
         company: "",
@@ -16,42 +15,61 @@ const Form = () => {
 
     const [focused, setFocused] = useState({});
 
-    const onBlur = ({target}) => {
-        setFocused((prev) => ({...prev, [target.name]:true}))
-    }
+    const onBlur = ({ target }) => {
+        setFocused((prev) => ({ ...prev, [target.name]: true }));
+    };
 
     const [isLoading, setIsLoading] = useState(false);
 
     const handleSubmit = async (e) => {
         e.preventDefault();
         setIsLoading(true);
+        const data = new FormData();
+        data.set("data", JSON.stringify(formData));
         try {
-            await axios.post('http://localhost:3001/api/submitForm', formData);
+            await axios.post("/api/contact", data);
             setIsLoading(false);
-            toast.success('Mensaje enviado exitosamente');
+            toast.success("Mensaje enviado exitosamente");
+            setFocused({});
+            setFormData({
+                name: "",
+                company: "",
+                number: "",
+                email: "",
+                message: "",
+            });
         } catch (error) {
             setIsLoading(false);
-            toast.error('Hubo un error al enviar el mensaje');
-            console.error('Error submitting form:', error.message);
+            toast.error("Hubo un error al enviar el mensaje");
+            console.error("Error submitting form:", error.message);
         }
     };
 
     const handleChange = (e) => {
-        const {name, value} = e.target;
+        const { name, value } = e.target;
         setFormData({
             ...formData,
-             [name]: value,
+            [name]: value,
         });
-    }
+    };
 
     return (
-
         <form
             onSubmit={handleSubmit}
             className="grid grid-cols-2 grid-rows-2 gap-8"
         >
-            <div className={`relative col-span-1 row-span-1 flex flex-col border-b border-slate-800 ${focused.name && !formData.name && "border-red-500"}`}>
-                <label className={`text-sm ${focused.name && !formData.name && "text-red-500"}`}>Nombre*</label>
+            <div
+                className={`relative col-span-1 row-span-1 flex flex-col border-b border-slate-800 ${
+                    focused.name && !formData.name && "border-red-500"
+                }`}
+            >
+                <label
+                    className={`text-sm ${
+                        focused.name && !formData.name && "text-red-500"
+                    }`}
+                >
+                    Nombre*
+                </label>
                 <input
                     name="name"
                     onChange={handleChange}
@@ -62,7 +80,11 @@ const Form = () => {
                     type="text"
                     className={`p-1 my-1 text-sm focus:outline-none rounded`}
                 ></input>
-                {focused.name && !formData.name && <p className="text-xs font-semibold text-red-500 absolute -bottom-5">Campo Requerido</p>}
+                {focused.name && !formData.name && (
+                    <p className="text-xs font-semibold text-red-500 absolute -bottom-5">
+                        Campo Requerido
+                    </p>
+                )}
             </div>
             <div className="col-span-1 row-span-1 flex flex-col border-b border-slate-800">
                 <label className="text-sm">Empresa</label>
@@ -86,8 +108,18 @@ const Form = () => {
                     className="p-2 text-sm focus:outline-none"
                 ></input>
             </div>
-            <div className={`relative col-span-1 row-span-1 flex flex-col border-b border-slate-800 ${focused.email && !formData.email && "border-red-500"}`}>
-                <label className={`text-sm ${focused.email && !formData.email && "text-red-500"}`}>Email*</label>
+            <div
+                className={`relative col-span-1 row-span-1 flex flex-col border-b border-slate-800 ${
+                    focused.email && !formData.email && "border-red-500"
+                }`}
+            >
+                <label
+                    className={`text-sm ${
+                        focused.email && !formData.email && "text-red-500"
+                    }`}
+                >
+                    Email*
+                </label>
                 <input
                     name="email"
                     onChange={handleChange}
@@ -98,7 +130,11 @@ const Form = () => {
                     type="text"
                     className={`p-1 my-1 text-sm focus:outline-none rounded`}
                 ></input>
-                {focused.email && !formData.email && <p className="text-xs font-semibold text-red-500 absolute -bottom-5">Campo Requerido</p>}
+                {focused.email && !formData.email && (
+                    <p className="text-xs font-semibold text-red-500 absolute -bottom-5">
+                        Campo Requerido
+                    </p>
+                )}
             </div>
 
             <div className="flex flex-col col-span-2">
@@ -115,22 +151,27 @@ const Form = () => {
             </div>
 
             <button
-                disabled={!formData.name || !formData.email}
+                disabled={isLoading || !formData.name || !formData.email}
                 type="submit"
-                className={`flex items-center justify-center text-sm bg-zinc-900 text-white p-3 font-normal ${!formData.email && "bg-zinc-500 cursor-not-allowed"} ${!formData.name && "bg-zinc-500 cursor-not-allowed"}`}
+                className={`flex items-center justify-center text-sm bg-zinc-900 text-white p-3 font-normal ${
+                    !formData.email && "bg-zinc-500 cursor-not-allowed"
+                } ${!formData.name && "bg-zinc-500 cursor-not-allowed"}`}
             >
-                {isLoading ? 
+                {isLoading ? (
                     <RotatingLines
                         strokeColor="grey"
                         strokeWidth="5"
                         animationDuration="0.75"
                         width="20"
                         visible={true}
-                    /> : 'Enviar Mensaje'}
-                <Toaster richColors/>    
+                    />
+                ) : (
+                    "Enviar Mensaje"
+                )}
+                <Toaster richColors />
             </button>
         </form>
-    )
-}
+    );
+};
 
-export default Form
+export default Form;

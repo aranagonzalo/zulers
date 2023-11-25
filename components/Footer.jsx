@@ -13,10 +13,10 @@ const Footer = () => {
             <Link href="/"><Image className="object-contain" src="/images/logo-zulers.png" fill alt="Logo Zulers"/></Link>
         </div>
         <ul className="w-full flex justify-center gap-20 items-center py-2 px-4 text-sm font-medium">
-            <Link href="/blog"><li>Blog</li></Link>
-            <Link href="/contacto"><li>Contacto</li></Link>
+            <Link href="/blog" className="uppercase"><li>Blog</li></Link>
+            <Link href="/contacto" className="uppercase"><li>Contacto</li></Link>
         </ul>
-        <div className="w-full flex justify-center lg:justify-start items-center py-2 px-4 text-xs font-normal">
+        <div className="w-full flex justify-center lg:justify-center items-center py-2 px-4 text-xs font-normal">
             <p className="flex py-2">{year} &copy; ZULERS PERÚ SAC - Derechos Reservados</p>
         </div>
     </div>

@@ -11,6 +11,8 @@
   "dependencies": {
     "@radix-ui/react-accordion": "^1.1.2",
     "@radix-ui/react-label": "^2.0.2",
+    "@radix-ui/react-select": "^2.0.0",
+    "@radix-ui/react-slot": "^1.0.2",
     "axios": "^1.6.2",
     "bootstrap": "^5.3.2",
     "class-variance-authority": "^0.7.0",
@@ -21,6 +23,7 @@
     "flowbite-react": "^0.6.4",
     "framer-motion": "^10.16.4",
     "lucide-react": "^0.291.0",
+    "multer": "^1.4.5-lts.1",
     "next": "14.0.1",
     "nodemailer": "^6.9.7",
     "react": "^18",

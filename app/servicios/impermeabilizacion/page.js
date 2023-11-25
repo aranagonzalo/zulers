@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { ChevronRight } from "lucide-react";
-import Carousel from "@/front/components/Carousel";
+import Carousel from "@/components/Carousel";
 
 export const metadata = {
     title: "Impermeabilización",

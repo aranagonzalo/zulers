@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import db from "@/utils/db";
+import db from "@/lib/db";
 import { notFound } from "next/navigation";
 import { ChevronRight } from "lucide-react";
 import {
