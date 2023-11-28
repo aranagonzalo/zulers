@@ -4,32 +4,32 @@ import Link from "next/link";
 import Image from "next/image";
 
 const Card = ({ id, title, paragraphs, image }) => {
-    const firstParagraph = paragraphs[0];
+  const firstParagraph = paragraphs[0];
 
-    return (
-        <Link
-            href={`/blog/${id}`}
-            className="max-w-xs mx-auto mb-8 h-[400px] bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition duration-300"
-        >
-            <div className="p-6">
-                {image && (
-                    <Image
-                        width={120}
-                        height={120}
-                        src={image}
-                        alt={title}
-                        className="mb-4 w-full max-h-[200px] rounded-t-lg"
-                    />
-                )}
-                <div>
-                    <h2 className="text-lg font-bold mb-2">{title}</h2>
-                    <p className="text-gray-700 text-sm">
-                        {firstParagraph && firstParagraph.text.slice(0, 100)}...
-                    </p>
-                </div>
-            </div>
-        </Link>
-    );
+  return (
+    <Link
+      href={`/blog/${id}`}
+      className="mx-auto mb-8 h-[400px] max-w-xs overflow-hidden rounded-none bg-white shadow-lg transition duration-300 hover:shadow-2xl"
+    >
+      <div>
+        {image && (
+          <Image
+            width={120}
+            height={120}
+            src={image}
+            alt={title}
+            className="mb-4 h-[200px] w-full rounded-t-lg"
+          />
+        )}
+        <div className="p-4">
+          <h2 className="mb-2 text-lg font-bold">{title.slice(0, 50)}...</h2>
+          <p className="text-sm font-normal text-gray-500">
+            {firstParagraph && firstParagraph.text.slice(0, 100)}...
+          </p>
+        </div>
+      </div>
+    </Link>
+  );
 };
 
 export default Card;
