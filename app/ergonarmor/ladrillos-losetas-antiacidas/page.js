@@ -105,6 +105,32 @@ export default function Home() {
           </button>
         </Link>
       </section>
+      <section className="bg-white px-96 py-12">
+        <h1 className="py-12 text-2xl font-medium text-[#649d4b]">
+          Losetas Antiacidas
+        </h1>
+        <iframe
+          className="aspect-video w-full"
+          src="https://www.youtube.com/embed/3gefXf8AGRs?si=gA6tnYkZAnM2ovcc"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+      </section>
+      <section className="bg-white px-96 py-12">
+        <h1 className="py-12 text-2xl font-medium text-[#649d4b]">
+          Ladrillo Antiacido de Borosilicato
+        </h1>
+        <iframe
+          className="aspect-video w-full"
+          src="https://youtube.com/embed/WYdBZ8utgb4?si=f6py3NXjWDWkOYA5"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+      </section>
       <section className="relative flex w-full flex-col justify-center bg-black px-6 py-8 md:p-12 lg:p-24">
         <Image
           className="opacity-20"

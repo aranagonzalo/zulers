@@ -190,7 +190,11 @@ const Navbar = () => {
           </div>
           <div className="w-[50%]">
             <div className="relative flex h-[54px] items-center justify-evenly bg-[#068940]">
-              <div className="-mt-2 flex flex-col items-center justify-center">
+              <Link
+                target="_blank"
+                href="https://www.ergonarmor.com"
+                className="-mt-2 flex flex-col items-center justify-center"
+              >
                 <Image
                   className="h-auto"
                   src="/images/logo-ergon-blanco.png"
@@ -202,7 +206,7 @@ const Navbar = () => {
                 <p className="text-[9px] font-semibold uppercase text-white">
                   Distribuidor Exclusivo
                 </p>
-              </div>
+              </Link>
               <h1 className="font-semibold uppercase text-white">
                 Recubrimientos de Alta Resistencia
               </h1>
@@ -329,7 +333,7 @@ const Navbar = () => {
                       router.push("/ergonarmor/ladrillos-losetas-antiacidas")
                     }
                   >
-                    Losetas Antiacidas
+                    Ladrillos y Losetas Antiacidas
                   </div>
                   <div
                     className={`absolute left-0 top-full grid bg-[#068940] p-2 text-[12px] font-semibold text-white lg:w-[200%] ${
@@ -604,7 +608,7 @@ const Navbar = () => {
                           Recubrimientos Antiácidos
                         </Link>
 
-                        <ChevronDown
+                        {/* <ChevronDown
                           color="white"
                           onClick={() =>
                             handleExtraMenu("recubrimientosAntiacidos")
@@ -613,9 +617,9 @@ const Navbar = () => {
                             extraMenuState.recubrimientosAntiacidos &&
                             "rotate-180 transition-all"
                           }`}
-                        />
+                        /> */}
                       </li>
-                      <AnimatePresence>
+                      {/* <AnimatePresence>
                         {extraMenuState.recubrimientosAntiacidos && (
                           <motion.ul
                             initial={{ opacity: 0, height: 0 }}
@@ -638,7 +642,7 @@ const Navbar = () => {
                             )}
                           </motion.ul>
                         )}
-                      </AnimatePresence>
+                      </AnimatePresence> */}
                       <li className="flex w-full items-center justify-between border-b-[1px] border-[#1f9553] p-4 text-sm uppercase text-white">
                         <Link
                           href="/ergonarmor/restauracion-de-metales"
@@ -646,7 +650,7 @@ const Navbar = () => {
                         >
                           Restauración de Metales
                         </Link>
-                        <ChevronDown
+                        {/* <ChevronDown
                           color="white"
                           onClick={() =>
                             handleExtraMenu("restauracionDeMetales")
@@ -655,9 +659,9 @@ const Navbar = () => {
                             extraMenuState.restauracionDeMetales &&
                             "rotate-180 transition-all"
                           }`}
-                        />
+                        /> */}
                       </li>
-                      <AnimatePresence>
+                      {/* <AnimatePresence>
                         {extraMenuState.restauracionDeMetales && (
                           <motion.ul
                             initial={{ opacity: 0, height: 0 }}
@@ -679,7 +683,7 @@ const Navbar = () => {
                             )}
                           </motion.ul>
                         )}
-                      </AnimatePresence>
+                      </AnimatePresence> */}
                       <li className="flex items-center justify-between border-b-[1px] border-[#1f9553] p-4 text-sm uppercase text-white">
                         <Link
                           onClick={closeAllMenu}
@@ -687,16 +691,16 @@ const Navbar = () => {
                         >
                           Concreto Polimérico
                         </Link>
-                        <ChevronDown
+                        {/* <ChevronDown
                           color="white"
                           onClick={() => handleExtraMenu("concretoPolimerico")}
                           className={`cursor-pointer ${
                             extraMenuState.concretoPolimerico &&
                             "rotate-180 transition-all"
                           }`}
-                        />
+                        /> */}
                       </li>
-                      <AnimatePresence>
+                      {/* <AnimatePresence>
                         {extraMenuState.concretoPolimerico && (
                           <motion.ul
                             initial={{ opacity: 0, height: 0 }}
@@ -718,7 +722,7 @@ const Navbar = () => {
                             )}
                           </motion.ul>
                         )}
-                      </AnimatePresence>
+                      </AnimatePresence> */}
                       <li className="flex items-center justify-between border-b-[1px] border-[#1f9553] p-4 text-sm uppercase text-white">
                         <Link
                           onClick={closeAllMenu}
@@ -726,7 +730,7 @@ const Navbar = () => {
                         >
                           Losetas Antiácidas
                         </Link>
-                        <ChevronDown
+                        {/* <ChevronDown
                           color="white"
                           onClick={() =>
                             handleExtraMenu("ladrillosLosetasAntiacidas")
@@ -735,9 +739,9 @@ const Navbar = () => {
                             extraMenuState.ladrillosLosetasAntiacidas &&
                             "rotate-180 transition-all"
                           }`}
-                        />
+                        /> */}
                       </li>
-                      <AnimatePresence>
+                      {/* <AnimatePresence>
                         {extraMenuState.ladrillosLosetasAntiacidas && (
                           <motion.ul
                             initial={{ opacity: 0, height: 0 }}
@@ -759,7 +763,7 @@ const Navbar = () => {
                             )}
                           </motion.ul>
                         )}
-                      </AnimatePresence>
+                      </AnimatePresence> */}
                       <li className="flex items-center justify-between p-3 text-sm uppercase text-white">
                         <Link
                           onClick={closeAllMenu}
@@ -767,7 +771,7 @@ const Navbar = () => {
                         >
                           Liners Termoplásticos
                         </Link>
-                        <ChevronDown
+                        {/* <ChevronDown
                           color="white"
                           onClick={() =>
                             handleExtraMenu("linersTermoplasticos")
@@ -776,9 +780,9 @@ const Navbar = () => {
                             extraMenuState.linersTermoplasticos &&
                             "rotate-180 transition-all"
                           }`}
-                        />
+                        /> */}
                       </li>
-                      <AnimatePresence>
+                      {/* <AnimatePresence>
                         {extraMenuState.linersTermoplasticos && (
                           <motion.ul
                             initial={{ opacity: 0, height: 0 }}
@@ -800,7 +804,7 @@ const Navbar = () => {
                             )}
                           </motion.ul>
                         )}
-                      </AnimatePresence>
+                      </AnimatePresence> */}
                     </motion.ul>
                   )}
                 </AnimatePresence>

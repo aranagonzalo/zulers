@@ -13,9 +13,9 @@ export default function Home() {
     <main className="flex w-full flex-col pt-16 lg:pt-[132px]">
       <section className="relative flex w-full flex-col justify-center bg-black px-6 py-12 md:p-24 lg:p-36">
         <Image
-          className="opacity-40"
+          className="object-cover opacity-50"
           fill={true}
-          src="/images/piso-con-recubrimiento-ucrete-planta-alimentos.png"
+          src="/images/pisos-fabrica-pollos.jpg"
           alt="Impermeabilización de techos metálicos"
         />
         <div className="z-10 h-[3px] w-16 bg-[#ea601f]"></div>

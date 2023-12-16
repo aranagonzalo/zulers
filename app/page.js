@@ -24,8 +24,14 @@ export default function Home() {
         </p>
         <p className="z-10 w-full pb-8 text-lg font-normal text-white/90 md:w-[65%]">
           Distribuimos en el Perú materiales poliméricos de alta resistencia
-          para exposiciones industriales hostiles de la multinacional{" "}
-          <span className="font-bold text-[#51a179]">Ergon Armor.</span>
+          para exposiciones industriales hostiles, bajo la marca{" "}
+          <Link
+            target="_blank"
+            href="https://www.ergonarmor.com"
+            className="font-semibold text-[#00a950] underline hover:text-[#51c688]"
+          >
+            Ergon Armor
+          </Link>
         </p>
         <Link className="z-10" href="/contacto">
           <button className="flex w-max items-center justify-start bg-[#ea601f] px-6 py-2 text-sm font-normal uppercase text-white">
