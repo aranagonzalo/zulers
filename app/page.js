@@ -48,7 +48,7 @@ export default function Home() {
       <section className="relative grid w-full grid-cols-1 grid-rows-4 justify-center gap-12 bg-white px-6 py-12 md:grid-cols-2 md:grid-rows-2 md:p-24 lg:p-36">
         <div className="relative flex aspect-square flex-col items-center justify-center rounded-sm border-2 border-[#d9d9d9]/20 bg-[#efefef]/20 p-6 md:p-12 xl:p-24">
           <Image
-            className="object-none"
+            className="object-cover"
             src="/images/valor-zulers-innovacion.png"
             width={120}
             height={120}
@@ -65,7 +65,7 @@ export default function Home() {
         </div>
         <div className="relative flex aspect-square flex-col items-center justify-center rounded-sm border-2 border-[#d9d9d9]/20 bg-[#efefef]/20 p-6 md:p-12 xl:p-24">
           <Image
-            className="object-none"
+            className="object-cover"
             src="/images/valor-zulers-integridad.png"
             width={120}
             height={120}
@@ -82,7 +82,7 @@ export default function Home() {
         </div>
         <div className="relative flex aspect-square flex-col items-center justify-center rounded-sm border-2 border-[#d9d9d9]/20 bg-[#efefef]/20 p-6 md:p-12 xl:p-24">
           <Image
-            className="object-none"
+            className="object-cover"
             src="/images/valor-zulers-consistencia.png"
             width={120}
             height={120}
@@ -99,7 +99,7 @@ export default function Home() {
         </div>
         <div className="relative flex aspect-square flex-col items-center justify-center rounded-sm border-2 border-[#d9d9d9]/20 bg-[#efefef]/20 p-6 md:p-12 xl:p-24">
           <Image
-            className="object-none"
+            className="object-cover"
             src="/images/valor-zulers-crecimiento.png"
             width={120}
             height={120}
