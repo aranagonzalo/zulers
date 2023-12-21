@@ -15,7 +15,7 @@ export default function Home() {
       <section className="relative flex w-full flex-col justify-center bg-black px-6 py-12 md:p-24 lg:p-36">
         <Image
           style={{ transform: "rotateY(180deg)" }}
-          className="opacity-30"
+          className="opacity-40"
           fill={true}
           src="/images/impermeabilizacion/impermeabilización-de-techo-metálico.png"
           alt="Impermeabilización de techos metálicos"
@@ -26,9 +26,7 @@ export default function Home() {
         </h1>
         <p className="z-10 w-full pb-16 text-base font-normal text-white/90 md:w-2/3 md:text-xl">
           Impermeabilización con{" "}
-          <span className="font-bold text-[#ea601f]">
-            sistemas de tecnología avanzada
-          </span>{" "}
+          <span className="font-bold">sistemas de tecnología avanzada</span>{" "}
           para cubiertas de concreto y metálicas, techos verdes, tanques,
           cisternas, reservorios, estacionamientos, terrazas, balcones, entre
           otros.

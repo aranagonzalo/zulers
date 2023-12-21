@@ -728,7 +728,7 @@ const Navbar = () => {
                           onClick={closeAllMenu}
                           href="/ergonarmor/ladrillos-losetas-antiacidas"
                         >
-                          Losetas Antiácidas
+                          Ladrillos y Losetas Antiácidas
                         </Link>
                         {/* <ChevronDown
                           color="white"

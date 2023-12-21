@@ -13,7 +13,7 @@ export default function Home() {
     <main className="flex w-full flex-col pt-16 lg:pt-[132px]">
       <section className="relative flex w-full flex-col justify-center bg-black px-6 py-12 md:p-24 lg:p-36">
         <Image
-          className="object-cover opacity-50"
+          className="object-cover opacity-60"
           fill={true}
           src="/images/pisos-fabrica-pollos.jpg"
           alt="Impermeabilización de techos metálicos"
