@@ -73,8 +73,8 @@ const Navbar = () => {
     <>
       {/*Navbar Desktop */}
       <header className="fixed z-50 hidden w-full flex-col bg-white lg:flex">
-        <motion.nav className="flex h-[26px] w-full border-b border-[#efefef]">
-          <div className="flex w-1/4 items-center justify-evenly border-r border-slate-300 bg-[#efefef]">
+        <motion.nav className="flex h-[28px] w-full border border-t-0 border-slate-300">
+          <div className="flex w-1/4 items-center justify-evenly bg-white">
             <ul className="m-0 flex w-full justify-evenly text-xs font-medium">
               <li>
                 <Link href="/blog" className="font-semibold uppercase">
@@ -83,7 +83,7 @@ const Navbar = () => {
               </li>
             </ul>
           </div>
-          <div className="flex w-1/4 items-center justify-evenly border-r border-slate-300 bg-[#efefef]">
+          <div className="flex w-1/4 items-center justify-evenly bg-white">
             <ul className="m-0 flex w-full justify-evenly text-xs font-medium">
               <li>
                 <Link href="/contacto" className="font-semibold uppercase">
@@ -92,7 +92,7 @@ const Navbar = () => {
               </li>
             </ul>
           </div>
-          <div className="flex w-1/2 items-center justify-evenly bg-[#efefef]">
+          <div className="flex w-1/2 items-center justify-evenly bg-white">
             <ul className="m-0 flex w-full justify-evenly gap-2 text-xs font-medium">
               <li className="flex items-center gap-4">
                 <Mail color="#efefef" size={18} fill="text-black" />
@@ -147,7 +147,7 @@ const Navbar = () => {
             </Link>
           </div>
           <div className="w-[36%]">
-            <div className="flex h-[54px] items-center justify-center bg-[#1f1f1f]">
+            <div className="flex h-[54px] items-center justify-center bg-gray-900">
               <h1 className="font-semibold uppercase text-white">Servicios</h1>
             </div>
             <div className="h-[54px] w-full">
@@ -158,29 +158,29 @@ const Navbar = () => {
                 >
                   <motion.li
                     whileHover={{ backgroundColor: "#1f1f1f" }}
-                    className="flex h-full cursor-pointer items-center justify-center p-2 text-[11px] font-semibold uppercase text-slate-700 hover:text-white"
+                    className="flex h-full cursor-pointer items-center justify-center bg-slate-100 p-2 text-[11px] font-semibold uppercase text-slate-900 hover:text-white"
                   >
                     Diseño & construcción de pisos
                   </motion.li>
                 </Link>
                 <Link
                   href="/servicios/recubrimiento-pisos-industriales"
-                  className="h-full w-1/3 shadow-sm shadow-slate-200"
+                  className="h-full w-1/3 shadow-sm shadow-slate-300"
                 >
                   <motion.li
                     whileHover={{ backgroundColor: "#1f1f1f" }}
-                    className="flex h-full cursor-pointer items-center justify-center p-2 text-[11px] font-semibold uppercase text-slate-700 hover:text-white"
+                    className="flex h-full cursor-pointer items-center justify-center bg-slate-100 p-2 text-[11px] font-semibold uppercase text-slate-900 hover:text-white"
                   >
                     Recubrimiento de pisos
                   </motion.li>
                 </Link>
                 <Link
                   href="/servicios/impermeabilizacion"
-                  className="h-full w-1/3 shadow-sm shadow-slate-200"
+                  className="h-full w-1/3 shadow-sm shadow-slate-300"
                 >
                   <motion.li
                     whileHover={{ backgroundColor: "#1f1f1f" }}
-                    className="flex h-full cursor-pointer items-center justify-center p-2 text-[11px] font-semibold uppercase text-slate-700 hover:text-white"
+                    className="flex h-full cursor-pointer items-center justify-center bg-slate-100 p-2 text-[11px] font-semibold uppercase text-slate-900 hover:text-white"
                   >
                     Impermeabilización
                   </motion.li>
@@ -219,8 +219,8 @@ const Navbar = () => {
                 >
                   <div
                     className={`h-full text-[11px] font-semibold uppercase ${
-                      !isHoveredRecubrimientos ? "text-slate-700" : ""
-                    } flex cursor-pointer items-center justify-center truncate whitespace-normal p-2`}
+                      !isHoveredRecubrimientos ? "text-slate-900" : ""
+                    } flex cursor-pointer items-center justify-center truncate whitespace-normal bg-[#068940]/20 p-2`}
                     onMouseEnter={() => setIsHoveredRecubrimientos(true)}
                     onMouseLeave={() => setIsHoveredRecubrimientos(false)}
                     onClick={() =>
@@ -255,8 +255,8 @@ const Navbar = () => {
                 >
                   <div
                     className={`h-full text-[11px] font-semibold uppercase ${
-                      !isHoveredRestauracion ? "text-slate-700" : ""
-                    } flex cursor-pointer items-center justify-center truncate whitespace-normal p-2`}
+                      !isHoveredRestauracion ? "text-slate-900" : ""
+                    } flex cursor-pointer items-center justify-center truncate whitespace-normal bg-[#068940]/20 p-2`}
                     onMouseEnter={() => setIsHoveredRestauracion(true)}
                     onMouseLeave={() => setIsHoveredRestauracion(false)}
                     onClick={() =>
@@ -291,8 +291,8 @@ const Navbar = () => {
                 >
                   <div
                     className={`h-full text-[11px] font-semibold uppercase ${
-                      !isHoveredConcreto ? "text-slate-700" : ""
-                    } flex cursor-pointer items-center justify-center truncate whitespace-normal p-2`}
+                      !isHoveredConcreto ? "text-slate-900" : ""
+                    } flex cursor-pointer items-center justify-center truncate whitespace-normal bg-[#068940]/20 p-2`}
                     onMouseEnter={() => setIsHoveredConcreto(true)}
                     onMouseLeave={() => setIsHoveredConcreto(false)}
                     onClick={() =>
@@ -325,8 +325,8 @@ const Navbar = () => {
                 >
                   <div
                     className={`h-full text-[11px] font-semibold uppercase ${
-                      !isHoveredLosetas ? "text-slate-700" : ""
-                    } flex cursor-pointer items-center justify-center truncate whitespace-normal p-2`}
+                      !isHoveredLosetas ? "text-slate-900" : ""
+                    } flex cursor-pointer items-center justify-center truncate whitespace-normal bg-[#068940]/20 p-2`}
                     onMouseEnter={() => setIsHoveredLosetas(true)}
                     onMouseLeave={() => setIsHoveredLosetas(false)}
                     onClick={() =>
@@ -361,8 +361,8 @@ const Navbar = () => {
                 >
                   <div
                     className={`h-full text-[11px] font-semibold uppercase ${
-                      !isHoveredLiners ? "text-slate-700" : ""
-                    } flex cursor-pointer items-center justify-center truncate whitespace-normal p-2`}
+                      !isHoveredLiners ? "text-slate-900" : ""
+                    } flex cursor-pointer items-center justify-center truncate whitespace-normal bg-[#068940]/20 p-2`}
                     onMouseEnter={() => setIsHoveredLiners(true)}
                     onMouseLeave={() => setIsHoveredLiners(false)}
                     onClick={() =>
