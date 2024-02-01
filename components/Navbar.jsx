@@ -220,7 +220,7 @@ const Navbar = () => {
                   <div
                     className={`h-full text-[11px] font-semibold uppercase ${
                       !isHoveredRecubrimientos ? "text-slate-900" : ""
-                    } flex cursor-pointer items-center justify-center truncate whitespace-normal bg-[#068940]/20 p-2`}
+                    } flex cursor-pointer items-center justify-center truncate whitespace-normal bg-[#56f08c]/10 p-2`}
                     onMouseEnter={() => setIsHoveredRecubrimientos(true)}
                     onMouseLeave={() => setIsHoveredRecubrimientos(false)}
                     onClick={() =>
@@ -256,7 +256,7 @@ const Navbar = () => {
                   <div
                     className={`h-full text-[11px] font-semibold uppercase ${
                       !isHoveredRestauracion ? "text-slate-900" : ""
-                    } flex cursor-pointer items-center justify-center truncate whitespace-normal bg-[#068940]/20 p-2`}
+                    } flex cursor-pointer items-center justify-center truncate whitespace-normal bg-[#56f08c]/10 p-2`}
                     onMouseEnter={() => setIsHoveredRestauracion(true)}
                     onMouseLeave={() => setIsHoveredRestauracion(false)}
                     onClick={() =>
@@ -292,7 +292,7 @@ const Navbar = () => {
                   <div
                     className={`h-full text-[11px] font-semibold uppercase ${
                       !isHoveredConcreto ? "text-slate-900" : ""
-                    } flex cursor-pointer items-center justify-center truncate whitespace-normal bg-[#068940]/20 p-2`}
+                    } flex cursor-pointer items-center justify-center truncate whitespace-normal bg-[#56f08c]/10 p-2`}
                     onMouseEnter={() => setIsHoveredConcreto(true)}
                     onMouseLeave={() => setIsHoveredConcreto(false)}
                     onClick={() =>
@@ -326,7 +326,7 @@ const Navbar = () => {
                   <div
                     className={`h-full text-[11px] font-semibold uppercase ${
                       !isHoveredLosetas ? "text-slate-900" : ""
-                    } flex cursor-pointer items-center justify-center truncate whitespace-normal bg-[#068940]/20 p-2`}
+                    } flex cursor-pointer items-center justify-center truncate whitespace-normal bg-[#56f08c]/10 p-2`}
                     onMouseEnter={() => setIsHoveredLosetas(true)}
                     onMouseLeave={() => setIsHoveredLosetas(false)}
                     onClick={() =>
@@ -362,7 +362,7 @@ const Navbar = () => {
                   <div
                     className={`h-full text-[11px] font-semibold uppercase ${
                       !isHoveredLiners ? "text-slate-900" : ""
-                    } flex cursor-pointer items-center justify-center truncate whitespace-normal bg-[#068940]/20 p-2`}
+                    } flex cursor-pointer items-center justify-center truncate whitespace-normal bg-[#56f08c]/10 p-2`}
                     onMouseEnter={() => setIsHoveredLiners(true)}
                     onMouseLeave={() => setIsHoveredLiners(false)}
                     onClick={() =>
