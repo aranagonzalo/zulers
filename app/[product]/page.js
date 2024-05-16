@@ -21,14 +21,22 @@ export async function generateMetadata({ params }) {
   };
 }
 
-export default function Home({ params }) {
-  const producto = db.productosGeneral.find(
-    (producto) => producto.url === params.product,
-  );
+export function generateStaticParams() {
+  return db.productosGeneral.map((producto) => {
+    return { product: producto.url };
+  });
+}
 
-  if (!producto) {
-    notFound();
+export default function Home({ params }) {
+  const { product } = params;
+
+  if (!product) {
+    return {
+      notFound: true,
+    };
   }
+
+  const producto = db.productosGeneral.find((p) => p.url === product);
 
   return (
     <main className="flex w-full flex-col pt-16 lg:pt-40">
