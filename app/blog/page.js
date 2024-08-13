@@ -29,7 +29,11 @@ const Page = () => {
             <span className="font-bold">últimas tendencias</span> en
             construcción y recubrimientos de pisos industriales,
             impermeabilizantes y compuestos de altas prestaciones para{" "}
-            <span className="font-bold">ambientes hostiles.</span>
+            <span className="font-bold">ambientes hostiles.</span> Consejos de
+            expertos y casos de estudio que te ayudarán a tomar decisiones
+            informadas. Nuestro objetivo es proporcionarte el conocimiento
+            necesario para optimizar tus proyectos y garantizar la durabilidad y
+            eficiencia en cada aplicación.
           </p>
         </div>
         <div className="absolute -bottom-8 right-1/2 flex w-full translate-x-1/2 flex-col justify-center bg-black/[85%] p-16 md:right-16 md:w-[55%] md:translate-x-0 lg:-bottom-16">
@@ -43,7 +47,11 @@ const Page = () => {
             <span className="font-bold">últimas tendencias</span> en
             construcción y recubrimientos de pisos industriales,
             impermeabilizantes y compuestos de altas prestaciones para{" "}
-            <span className="font-bold">ambientes hostiles.</span>
+            <span className="font-bold">ambientes hostiles.</span> Consejos de
+            expertos y casos de estudio que te ayudarán a tomar decisiones
+            informadas. Nuestro objetivo es proporcionarte el conocimiento
+            necesario para optimizar tus proyectos y garantizar la durabilidad y
+            eficiencia en cada aplicación.
           </p>
         </div>
       </section>

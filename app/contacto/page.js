@@ -4,8 +4,9 @@ import { Mail, Phone, ThumbsUp, Linkedin, MapPin } from "lucide-react";
 import Form from "../../components/Form";
 
 export const metadata = {
-  title: "Contacto",
-  description: "Nuestro equipo de expertos siempre esta listo para ayudarte.",
+  title: "Contáctate con nuestro equipo de expertos | Zulers",
+  description:
+    "Nuestro equipo de expertos siempre esta listo para ayudarte para cualquier consulta que necesites. Atención rápida mediante nuestros canales de WhatsApp y Correo electrónico.",
 };
 
 export default function Home() {

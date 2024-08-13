@@ -2,9 +2,9 @@ import Link from "next/link";
 import Image from "next/image";
 
 export const metadata = {
-  title: "Diseño y Construcción de Pisos Industriales",
+  title: "Diseño y Construcción de Pisos Industriales | Zulers",
   description:
-    "Especialistas en construcción, reparación y diseño de losas de concreto para la industria y comercio. ",
+    "Somos especialistas en construcción, reparación y diseño de losas de concreto para la industria y comercio. ",
 };
 
 export default function Home() {

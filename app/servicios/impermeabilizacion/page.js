@@ -4,7 +4,8 @@ import { ChevronRight } from "lucide-react";
 import Carousel from "@/components/Carousel";
 
 export const metadata = {
-  title: "Impermeabilización",
+  title:
+    "Impermeabilización para cubiertas de concreto y metálicas, tanques, cisternas, estacionamientos, terrazas, balcones, entre otros.| Zulers",
   description:
     "Impermeabilización de infraestructuras de concreto y techos metálicos con sistemas de tecnología avanzada para cubiertas, cisternas, reservorios, etc.",
 };

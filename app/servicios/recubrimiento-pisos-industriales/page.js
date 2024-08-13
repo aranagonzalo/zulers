@@ -3,7 +3,8 @@ import Image from "next/image";
 import { ChevronRight } from "lucide-react";
 
 export const metadata = {
-  title: "Recubrimientos Para Pisos Industriales",
+  title:
+    "Recubrimientos Para Pisos Industriales - Protección, instalación y restauración de losas industriales | Zulers",
   description:
     "Especialistas en protección, instalación y restauración de losas industriales con sistemas de recubrimientos de alta resistencia.",
 };
