@@ -30,13 +30,11 @@ export function generateStaticParams() {
 export default function Home({ params }) {
   const { product } = params;
 
-  if (!product) {
-    return {
-      notFound: true,
-    };
-  }
-
   const producto = db.productosGeneral.find((p) => p.url === product);
+
+  if (!producto) {
+    notFound();
+  }
 
   return (
     <main className="flex w-full flex-col pt-16 lg:pt-40">
